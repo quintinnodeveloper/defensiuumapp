@@ -1,3 +1,8 @@
+> Configurar conta Github
+
+    git config --global user.email "quintinno.developer@gmail.com"
+    git config --global user.name "Quintinno"
+
 > Adicionar Android ao projeto
 
     ionic capacitor add android

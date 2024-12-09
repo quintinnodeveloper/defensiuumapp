@@ -1,0 +1,54 @@
+ion-content swiper-container swiper-slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    // border: red solid 2px;
+    margin-top: 1rem;
+}
+
+ion-content swiper-container swiper-slide img {
+    width: 70%;
+    margin-bottom: 5rem;
+}
+
+ion-content swiper-container swiper-slide ion-text {
+    text-align: center;
+}
+
+ion-content swiper-container swiper-slide ion-text h1 {
+    font-size: 1.8rem;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+}
+
+ion-content swiper-container swiper-slide ion-text p {
+    color: var(--ion-color-medium-tint);
+    font-size: 1.2rem;
+    margin: 2rem;
+}
+
+ion-content swiper-container::part(bullet-active) {
+    margin-bottom: 1vh;
+    width: 14px;
+    border-radius: 4px;
+    background: var(--ion-color-primary);
+}
+
+ion-content swiper-container::part(bullet) {
+    margin-bottom: 1vh;
+    width: 8px;
+    border-radius: 4px;
+    background: var(--ion-color-dark);
+}
+
+ion-footer ion-toolbar ion-button {
+    width: 300px;
+    margin: auto;
+    margin-bottom: 4rem;
+}
+
+ion-footer ion-toolbar ion-button ion-text {
+    color: var(--ion-color-light);
+    font-size: 1rem;
+}

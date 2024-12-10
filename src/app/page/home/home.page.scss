@@ -35,3 +35,13 @@ ion-header ion-icon {
     color: var(--ion-color-medium-shade);
     cursor: pointer;
 }
+
+ion-content ion-searchbar {
+    border-radius: 30px;
+    background: #eef0f2;
+    --background: #eef0f2;
+    --height: 100px;
+    // border: solid red 2px;
+    width: 90%;
+    margin: auto;
+}

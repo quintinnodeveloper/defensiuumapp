@@ -9,7 +9,7 @@ import {
   IonLabel,
   IonText,
   IonTitle,
-  IonToolbar
+  IonToolbar, IonSearchbar
 } from '@ionic/angular/standalone';
 import { addIcons } from 'ionicons';
 import { locateOutline, notificationsOutline } from "ionicons/icons";
@@ -21,7 +21,7 @@ import { locateOutline, notificationsOutline } from "ionicons/icons";
   standalone: true,
   imports: [
     IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule, 
-    IonAvatar, IonText, IonLabel, IonIcon, 
+    IonAvatar, IonText, IonLabel, IonIcon, IonSearchbar
   ]
 })
 export class HomePage implements OnInit {

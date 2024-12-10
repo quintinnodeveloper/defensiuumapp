@@ -1,0 +1,37 @@
+ion-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ion-header div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+ion-header div ion-avatar img {
+    border: solid var(--ion-color-light-shade) 5px;
+    cursor: pointer;
+}
+
+ion-header div ion-text span,
+ion-header div ion-text p {
+    margin: 0;
+    line-height: 1.2;
+}
+
+ion-header div ion-text span {
+    font-size: 1.4rem;
+}
+
+ion-header div ion-text p {
+    color: var(--ion-color-medium);
+}
+
+ion-header ion-icon {
+    font-size: 1.7rem;
+    color: var(--ion-color-medium-shade);
+    cursor: pointer;
+}

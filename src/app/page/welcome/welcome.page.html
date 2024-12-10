@@ -9,6 +9,7 @@
         <ion-text>
           <h1>{{slideArray.titulo}}</h1>
           <p>{{slideArray.texto}}</p>
+          <br><br><br><br><br><br>
         </ion-text>
       </swiper-slide>
     }
@@ -19,9 +20,14 @@
 
 <ion-footer class="ion-no-border">
   <ion-toolbar>
-    <ion-button 
+    <ion-button *ngIf=" buttonText != 'Lets Start' "
     (click)="onNavegarProximoSwiper()" expand="block" shape="round" color="primary" 
     size="large" [strong]="true">
+      <ion-text>{{ buttonText }}</ion-text>
+    </ion-button>
+    <ion-button *ngIf=" buttonText === 'Lets Start' "
+    (click)="onNavegarProximoSwiper()" expand="block" shape="round" color="primary" 
+    size="large" [strong]="true" routerLink="/home">
       <ion-text>{{ buttonText }}</ion-text>
     </ion-button>
   </ion-toolbar>

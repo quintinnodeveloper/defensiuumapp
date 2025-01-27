@@ -15,8 +15,125 @@
 
   <ion-searchbar placeholder="Search password" mode="ios"></ion-searchbar>
 
-  <div class="cabecalho ion-padding">
+  <div class="ion-padding">
     <h3>What do you want to save?</h3>
+  </div>
+
+  <swiper-container 
+    #swiperCategoriaCredencial 
+    [keyboard]="false" 
+    [slidesPerView]="3"
+    [spaceBetween]="10"
+    class="ion-padding">
+
+      <swiper-slide>
+        <div class="icon">
+          <img src="../../../assets/icon/login.png" alt="login"/>
+        </div>
+        <ion-text>
+          <h5>Login</h5>
+        </ion-text>
+      </swiper-slide>
+
+      <swiper-slide>
+        <div class="icon">
+          <img src="../../../assets/icon/surface1.png" alt="sites"/>
+        </div>
+        <ion-text>
+          <h5>Browse</h5>
+        </ion-text>
+      </swiper-slide>
+
+      <swiper-slide>
+        <div class="icon">
+          <img src="../../../assets/icon/card.png" alt="cartoes"/>
+        </div>
+        <ion-text>
+          <h5>Card</h5>
+        </ion-text>
+      </swiper-slide>
+
+      <swiper-slide>
+        <div class="icon">
+          <img src="../../../assets/icon/login.png" alt="login"/>
+        </div>
+        <ion-text>
+          <h5>Login</h5>
+        </ion-text>
+      </swiper-slide>
+
+      <swiper-slide>
+        <div class="icon">
+          <img src="../../../assets/icon/surface1.png" alt="sites"/>
+        </div>
+        <ion-text>
+          <h5>Browse</h5>
+        </ion-text>
+      </swiper-slide>
+
+      <swiper-slide>
+        <div class="icon">
+          <img src="../../../assets/icon/card.png" alt="cartoes"/>
+        </div>
+        <ion-text>
+          <h5>Card</h5>
+        </ion-text>
+      </swiper-slide>
+
+      <swiper-slide>
+        <div class="icon">
+          <img src="../../../assets/icon/login.png" alt="login"/>
+        </div>
+        <ion-text>
+          <h5>Login</h5>
+        </ion-text>
+      </swiper-slide>
+
+      <swiper-slide>
+        <div class="icon">
+          <img src="../../../assets/icon/surface1.png" alt="sites"/>
+        </div>
+        <ion-text>
+          <h5>Browse</h5>
+        </ion-text>
+      </swiper-slide>
+
+      <swiper-slide>
+        <div class="icon">
+          <img src="../../../assets/icon/card.png" alt="cartoes"/>
+        </div>
+        <ion-text>
+          <h5>Card</h5>
+        </ion-text>
+      </swiper-slide>
+
+  </swiper-container>
+
+  <div class="ion-padding">
+    <h3>Recently Used</h3>
+  </div>
+
+  <div class="credencial-list">
+
+    <div class="credencial">
+
+      <div class="left">
+        <div class="icone">
+          <img src="../../../assets/icon/google.png" alt=""/>
+        </div>
+      </div>
+      <div class="center">
+        <ion-text>
+          Google Account
+          <p>john.doe&#64;gmail.com</p>
+        </ion-text>
+      </div>
+      <div class="right">
+        <ion-icon name="copy-outline"></ion-icon>
+      </div>
+
+    </div>
+
   </div>
 
 </ion-content>

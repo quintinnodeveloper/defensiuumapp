@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, OnInit } from '@angular/core';
+import { Component, CUSTOM_ELEMENTS_SCHEMA, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import {
   IonAvatar,
@@ -7,12 +7,13 @@ import {
   IonHeader,
   IonIcon,
   IonLabel,
+  IonSearchbar,
   IonText,
   IonTitle,
-  IonToolbar, IonSearchbar
+  IonToolbar
 } from '@ionic/angular/standalone';
 import { addIcons } from 'ionicons';
-import { locateOutline, notificationsOutline } from "ionicons/icons";
+import { notificationsOutline, copy, copyOutline } from "ionicons/icons";
 
 @Component({
   selector: 'app-home',
@@ -22,12 +23,13 @@ import { locateOutline, notificationsOutline } from "ionicons/icons";
   imports: [
     IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule, 
     IonAvatar, IonText, IonLabel, IonIcon, IonSearchbar
-  ]
+  ],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class HomePage implements OnInit {
 
   constructor() {
-    addIcons({ notificationsOutline });
+    addIcons({notificationsOutline,copyOutline,copy});
   }
 
   ngOnInit() {}

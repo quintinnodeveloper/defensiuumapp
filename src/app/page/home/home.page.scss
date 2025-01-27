@@ -90,3 +90,53 @@ swiper-slide:nth-child(3) .icon {
     border-radius: 50%;
     padding: 1rem;
 }
+
+.credencial-list .credencial {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.credencial-list .credencial .left .icone {
+    background: #F1F5FC;
+    padding: 1rem;
+    border-radius: 30%;
+}
+
+.credencial-list .credencial .left .icone img {
+    width: 40px;
+    height: 40px;
+}
+
+.credencial-list .credencial .left {
+    text-align: center;
+    flex: 20%
+}
+
+.credencial-list .credencial .center {
+    flex: 85%;
+    padding-left: 1rem;
+}
+
+.credencial-list .credencial .center ion-text {
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    line-height: 0.4rem;
+}
+
+.credencial-list .credencial .center ion-text p {
+    color: #758393;
+    font-size: 0.9rem;
+    font-weight: normal;
+}
+
+.credencial-list .credencial .right {
+    flex: 10%;
+    text-align: center;
+}
+
+.credencial-list .credencial .right ion-icon {
+    font-size: 1.5rem;
+    color: #758393;
+}
